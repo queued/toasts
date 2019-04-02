@@ -8,7 +8,7 @@ if (!function_exists('toast')) {
      * @param  string      $level
      * @return Queued\Toasts\ToastsNotifier
      */
-    function toast($message = null, $level = 'light')
+    function toast($message = null, $level = 'white')
     {
         $notifier = app('toast');
 
