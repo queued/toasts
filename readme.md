@@ -140,6 +140,6 @@ You can publish this package to change some configuration defaults and the views
 php artisan vendor:publish --provider="Queued\Toasts\ToastServiceProvider"
 ```
 
-The package view will now be located in the `resources/views/vendor/toast/` directory.
+The package view will now be located in the `resources/views/vendor/toast/` directory, and the config will be in `config/toasts.php`.
 
 
