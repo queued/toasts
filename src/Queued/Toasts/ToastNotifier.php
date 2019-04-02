@@ -117,10 +117,10 @@ class ToastNotifier
      * Toasts a general message.
      *
      * @param  string|null $message
-     * @param  string $level
+     * @param  string|null $level
      * @return $this
      */
-    public function toast($message = null, $level = 'white')
+    public function toast($message = null, $level = null)
     {
         // If no message was provided, we should update
         // the most recently added message.
