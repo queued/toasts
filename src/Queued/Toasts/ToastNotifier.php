@@ -95,7 +95,7 @@ class ToastNotifier
      */
     public function normal($message = null)
     {
-        return $this->toast($message, 'light');
+        return $this->toast($message, 'white');
     }
 
     /**

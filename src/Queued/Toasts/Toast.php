@@ -25,7 +25,7 @@ class Toast implements ArrayAccess
      *
      * @var string
      */
-    public $level = 'light';
+    public $level = 'white';
 
     /**
      * Whether the message should auto-hide.

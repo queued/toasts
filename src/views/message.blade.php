@@ -4,7 +4,7 @@
             <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="{{ config('toasts.delay', 7000) }}"
                  data-autohide="{{ (!$toast['important']) ? 'true' : 'false'}}">
 
-                <div class="toast-header bg-{{ $toast['level'] }} {{ (in_array($toast['level'], ['warning', 'light'])) ? 'text-dark' : 'text-light' }}">
+                <div class="toast-header bg-{{ $toast['level'] }} {{ (in_array($toast['level'], ['warning', 'white'])) ? 'text-dark' : 'text-light' }}">
                     <strong class="mr-auto">{{ ($toast['title']) ? $toast['title'] : config('toasts.default_title') }}</strong>
                     <small>{{ $toast['time'] }}</small>
 
