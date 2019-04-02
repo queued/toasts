@@ -64,6 +64,7 @@ toast('message', 'level', 'title');
 There are a few quick methods to modify the toast:
 
 - `toast('Message')->success()`: Set the toast theme to "success".
+- `toast('Message')->normal()`: A normal toast.
 - `toast('Message')->error()`: Set the toast theme to "danger".
 - `toast('Message')->warning()`: Set the toast theme to "warning".
 - `toast('Message')->info()`: Set the toast theme to "info".
@@ -103,12 +104,6 @@ There are a few quick methods to modify the toast:
 </html>
 ```
 
-If you need to modify the toast message partials, you can run:
-
-```bash
-php artisan vendor:publish --provider="Queued/Toasts/ToastsServiceProvider"
-```
-
 ```php
 toast('Welcome Aboard!');
 
@@ -140,7 +135,7 @@ return redirect('somewhere');
 
 ## Configuration & personalization
 
-You can publish the configuration file to tweak the position of the toast or the default value for 'autohide'.
+You can publish the configuration file to change a few defaults
 ```bash
 php artisan vendor:publish --provider="Queued\Toasts\ToastServiceProvider" --tag="config"
 ```
