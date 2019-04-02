@@ -77,6 +77,17 @@ class ToastNotifier
     }
 
     /**
+     * Toasts a normal message
+     *
+     * @param string $message
+     * @return ToastNotifier
+     */
+    public function normal($message)
+    {
+        return $this->toast($message, 'white');
+    }
+
+    /**
      * Set the title of the last toast
      *
      * @param null|string $title
