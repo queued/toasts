@@ -14,6 +14,11 @@ return [
     'delay' => 7000,
 
     /*
+     * Default title to be used when no title is provided
+     */
+    'default_title' => 'Notification',
+
+    /*
      * Defines the position of the toast on the browser
      */
     "position_x" => 'top', // "top" or "bottom"
