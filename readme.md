@@ -135,15 +135,9 @@ return redirect('somewhere');
 
 ## Configuration & personalization
 
-You can publish the configuration file to change a few defaults
+You can publish this package to change some configuration defaults and the views.
 ```bash
-php artisan vendor:publish --provider="Queued\Toasts\ToastServiceProvider" --tag="config"
-```
-
-You can publish the view and tweak it if you want!
-
-```bash
-php artisan vendor:publish --provider="Queued\Toasts\ToastServiceProvider" --tag="views"
+php artisan vendor:publish --provider="Queued\Toasts\ToastServiceProvider"
 ```
 
 The package view will now be located in the `resources/views/vendor/toast/` directory.
