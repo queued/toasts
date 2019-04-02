@@ -1,0 +1,34 @@
+{
+    "name": "queued/toasts",
+    "description": "Toast notifications made simple, with easy installation and configuration for Laravel 5.5+",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "All Unser Miranda",
+            "email": "allunser.miranda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/support": "~5.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Queued\\Toasts": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Queued\\Toasts\\ToastServiceProvider"
+            ],
+            "aliases": {
+                "Toast": "Queued\\Toasts\\ToastFacade"
+            }
+        }
+    }
+}
