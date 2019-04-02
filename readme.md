@@ -64,10 +64,12 @@ toast('message', 'level', 'title');
 There are a few quick methods to modify the toast:
 
 - `toast('Message')->success()`: Set the toast theme to "success".
-- `toast('Message')->normal()`: A normal toast.
+- `toast('Message')->normal()`: A normal toast. (default)
 - `toast('Message')->error()`: Set the toast theme to "danger".
 - `toast('Message')->warning()`: Set the toast theme to "warning".
 - `toast('Message')->info()`: Set the toast theme to "info".
+- `toast('Message')->dark()`: Set the toast theme to "dark".
+- `toast('Message')->primary()`: Set the toast theme to "primary".
 - `toast('Message')->important()`: Add a close button to the toast.
 - `toast('Message')->title('Toast title')`: Set the toast title.
 - `toast('Message')->time('just now')`: Set the toast time in the right side of the header

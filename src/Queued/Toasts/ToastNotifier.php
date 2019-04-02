@@ -77,14 +77,36 @@ class ToastNotifier
     }
 
     /**
+     * Toasts a primary toast
+     *
+     * @param string|null $message
+     * @return $this
+     */
+    public function primary($message = null)
+    {
+        return $this->toast($message, 'primary');
+    }
+
+    /**
      * Toasts a normal message
      *
-     * @param string $message
-     * @return ToastNotifier
+     * @param string|null $message
+     * @return $this
      */
-    public function normal($message)
+    public function normal($message = null)
     {
-        return $this->toast($message, 'white');
+        return $this->toast($message, 'light');
+    }
+
+    /**
+     * Toast a dark message
+     *
+     * @param string|null $message
+     * @return $this
+     */
+    public function dark($message = null)
+    {
+        return $this->toast($message, 'dark');
     }
 
     /**
